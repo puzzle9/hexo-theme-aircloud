@@ -6,14 +6,14 @@
     <meta property="og:description" content="<%= config.description %>">
     <meta property="og:type" content="website">
     <meta name="description" content="<%= config.description %>">
-    <meta name="keyword"  content="<%= config.keyword %>">
+    <meta name="keyword"  content="<%= config.keywords %>">
     <link rel="shortcut icon" href="<%= config.root %>img/favicon.ico">
 
     <title>
         <% if (page.title) { %>
-        <%= page.title + ' - ' + config.SEOTitle %>
+        <%= page.title + ' - ' + config.title %>
         <% } else{%>
-        <%= config.SEOTitle %>
+        <%= config.title %>
         <% } %>
     </title>
 
