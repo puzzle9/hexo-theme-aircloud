@@ -12,7 +12,9 @@
 </div>
 
 <div class="index-about">
-    <i> <%= config.subtitle %> </i>
+    <% if(!is_post()){%>
+        <i> <%= config.subtitle %> </i>
+    <% } %>
 </div>
 
 <div class="index-container">
