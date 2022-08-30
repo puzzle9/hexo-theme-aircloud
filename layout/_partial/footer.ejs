@@ -71,13 +71,30 @@
     </p>
     <% }%>
     <p>
-        <span id="busuanzi_container_site_pv">
-            <span id="busuanzi_value_site_pv"></span>PV
+        <% if(config.copyright) { %>
+        <span>
+            &copy;
+            <% var endYear = config.copyright.end_year || new Date().getFullYear() %>
+            <% var startYear = config.copyright.start_year || new Date().getFullYear() %>
+            <%= startYear >= endYear ? endYear : startYear + "-" + endYear %>
+            <a href="/"><%= config.author || config.title %></a>
         </span>
-        <span id="busuanzi_container_site_uv">
-            <span id="busuanzi_value_site_uv"></span>UV
-        </span>
-        Created By <a href="https://hexo.io/">Hexo</a>  Theme <a href="https://github.com/aircloud/hexo-theme-aircloud">AirCloud</a></p>
+        <% }%>
+        Created By
+        <a href="https://hexo.io/">Hexo</a>
+        Theme
+        <a href="https://github.com/puzzle9/hexo-theme-aircloud-puzzle">AirCloud-puzzle9</a>
+    </p>
+  <div>
+    <span id="busuanzi_container_site_pv">
+        <span id="busuanzi_value_site_pv"></span>
+        PV
+    </span>
+    <span id="busuanzi_container_site_uv">
+        <span id="busuanzi_value_site_uv"></span>
+        UV
+    </span>
+  </div>
 </footer>
 
 
