@@ -42,6 +42,8 @@ Hexo-Theme-AirCloud 是一个简洁轻量的 hexo 博客主题，旨在将中心
 
 同其他博客主题使用方式相同，直接 clone 或者下载本项目，复制粘贴到 themes 文件夹下即可。
 
+> 因为修改样式使用了 `less` 所以还需要安装 `yarn add -D hexo-renderer-less`
+
 具体的 _config.yml 自定义配置，请参考[DEMO](https://github.com/aircloud/hexo-aircloud-blog)。
 
 ## 功能适配
