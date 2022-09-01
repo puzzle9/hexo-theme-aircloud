@@ -6,6 +6,10 @@ less:
 icon_urls:
   - //at.alicdn.com/t/font_620856_28hi1hpxx24.css
 
+icon_search:
+  search: iconfont icon-sousuo1
+  back: iconfont icon-fanhui
+
 navs: [
     { title: '主页', icon: 'iconfont icon-shouye1' },
     { title: '标签', url: '/tags', icon: 'iconfont icon-biaoqian1' },

@@ -23,7 +23,7 @@
             <%if(config.search && config.search.path){%>
             <li>
                 <a id="search">
-                    <i class="iconfont icon-sousuo1"></i>
+                    <i class="<%= config.icon_search ? config.icon_search.search : theme.icon_search.search %>"></i>
                     <span><%= __('nav.search') %></span>
                 </a>
             </li>
@@ -43,7 +43,9 @@
     <div class="search-bg" id="search-bg"></div>
     <div class="search-container">
         <div class="search-input">
-            <span id="esc-search"> <i class="icon-fanhui iconfont"></i></span>
+            <span id="esc-search">
+                <i class="<%= config.icon_search ? config.icon_search.back : theme.icon_search.back %>">
+            </span>
             <input id="search-input"/>
             <span id="begin-search"><%= __('search.search') %></span>
         </div>
